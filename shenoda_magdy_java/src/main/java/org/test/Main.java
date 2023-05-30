@@ -1,17 +1,31 @@
-package com.trainee;
+package org.test;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
 
+        Integer value =0;
+        
         Scanner scanner = new Scanner(System.in);
         Algorithm algorithm = new Algorithm();
 
-        int []input= {1,2,3,4,5,6,7,8,9,10};
+        ArrayList<Integer>input1 = new ArrayList<>();
 
-            System.out.println(algorithm.numeric_array(input));
+        while (value!=null){
+
+            scanner.nextInt();
+
+
+        }
+
+
+
+        int [] input={1,2,3,4,5,6,7,8,9,10};
+
+        System.out.println(algorithm.numeric_array(input));
 
 
         System.out.println("input number ...");
@@ -19,7 +33,6 @@ public class Main {
 
         System.out.println("input Name");
         System.out.println(algorithm.matches(scanner.next()));
-
 
 
         // [((())()(())]] Not correct

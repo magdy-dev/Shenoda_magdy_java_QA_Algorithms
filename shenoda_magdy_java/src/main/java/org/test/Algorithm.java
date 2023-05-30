@@ -1,9 +1,8 @@
-package com.trainee;
+package org.test;
 
 import java.util.Objects;
 
 public class Algorithm {
-
     public int numeric_array(int[] array) {
         int counter = 0;
 
