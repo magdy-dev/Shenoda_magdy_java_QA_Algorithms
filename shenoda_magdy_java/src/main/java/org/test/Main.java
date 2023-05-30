@@ -1,37 +1,40 @@
 package org.test;
 
-import java.util.ArrayList;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
 
-        Integer value =0;
-        
         Scanner scanner = new Scanner(System.in);
         Algorithm algorithm = new Algorithm();
 
-        ArrayList<Integer>input1 = new ArrayList<>();
+        //there is a numeric array at the input, it is necessary to output the elements of the array that are multiples of 3
 
-        while (value!=null){
 
-            scanner.nextInt();
+        System.out.println("input size ...");
+        int[] myArr = new int[scanner.nextInt()];
 
+        for (int i = 0; i < myArr.length; i++) {
+
+            System.out.println("input array ...");
+            myArr[i] = scanner.nextInt();
 
         }
 
+        System.out.println(algorithm.numeric_array(myArr));
 
 
-        int [] input={1,2,3,4,5,6,7,8,9,10};
+        // entered number is greater than 7, then output “Hi” if its las will get Number is <7
 
-        System.out.println(algorithm.numeric_array(input));
-
-
-        System.out.println("input number ...");
+        System.out.println("input number greater than 7...");
         System.out.println(algorithm.greater_number(scanner.nextInt()));
 
-        System.out.println("input Name");
+
+        //ntered name matches Vyacheslav, then output “Hi, Vyacheslav”, if not, then output will be  “No such name”
+
+        System.out.println("input Name Vyacheslav");
         System.out.println(algorithm.matches(scanner.next()));
 
 
