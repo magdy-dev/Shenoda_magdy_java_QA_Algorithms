@@ -5,19 +5,12 @@ import java.util.Objects;
 public class Algorithm {
 
 
-    public int numeric_array(int[] array) {
-        int counter = 0;
-
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] % 3 == 0) {
-                counter++;
-
-                System.out.println("element of array divided into 3: " + array[i]);
+    public void numeric_array(int[] array) {
+        for (int j : array) {
+            if (j % 3 == 0) {
+                System.out.println(j);
             }
-
         }
-
-        return counter;
     }
 
 
