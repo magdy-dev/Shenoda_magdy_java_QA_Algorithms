@@ -11,7 +11,10 @@ public class Algorithm {
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 3 == 0) {
                 counter++;
+
+                System.out.println("element of array divided into 3: " + array[i]);
             }
+
         }
 
         return counter;
